@@ -9,9 +9,9 @@ const Index = () => {
   const projects = [
     {
       id: 1,
-      title: 'Проект Alpha',
-      description: 'Корпоративный веб-сайт для технологической компании',
-      category: 'Веб-разработка',
+      title: 'OS Nick 8',
+      description: 'Первая система где имеются красивые анимации!',
+      category: '',
       image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop'
     },
     {
@@ -163,9 +163,11 @@ const Index = () => {
                     className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
-                  <span className="absolute top-4 left-4 bg-gradient-to-r from-blue-900 to-blue-700 text-white px-3 py-1 rounded-full text-sm font-medium shadow-lg">
-                    {project.category}
-                  </span>
+                  {project.category && (
+                    <span className="absolute top-4 left-4 bg-gradient-to-r from-blue-900 to-blue-700 text-white px-3 py-1 rounded-full text-sm font-medium shadow-lg">
+                      {project.category}
+                    </span>
+                  )}
                 </div>
                 <CardHeader>
                   <CardTitle>{project.title}</CardTitle>
