@@ -113,9 +113,14 @@ const Index = () => {
 
       <section id="news" className="py-16 bg-muted">
         <div className="container mx-auto px-4">
-          <div className="flex items-center gap-3 mb-8">
-            <Icon name="Newspaper" size={32} className="text-primary" />
-            <h2 className="text-4xl font-bold">Новости</h2>
+          <div className="flex items-center gap-4 mb-8">
+            <div className="relative">
+              <div className="absolute inset-0 bg-primary/20 blur-xl rounded-full"></div>
+              <div className="relative bg-gradient-to-br from-primary to-secondary p-4 rounded-2xl shadow-lg">
+                <Icon name="Newspaper" size={48} className="text-white" />
+              </div>
+            </div>
+            <h2 className="text-5xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">Новости</h2>
           </div>
           <div className="grid md:grid-cols-3 gap-6">
             {news.map((item) => (
@@ -138,9 +143,14 @@ const Index = () => {
 
       <section id="projects" className="py-16">
         <div className="container mx-auto px-4">
-          <div className="flex items-center gap-3 mb-8">
-            <Icon name="Briefcase" size={32} className="text-secondary" />
-            <h2 className="text-4xl font-bold">Сборки проектов</h2>
+          <div className="flex items-center gap-4 mb-8">
+            <div className="relative">
+              <div className="absolute inset-0 bg-secondary/20 blur-xl rounded-full"></div>
+              <div className="relative bg-gradient-to-br from-secondary to-primary p-4 rounded-2xl shadow-lg transform rotate-6">
+                <Icon name="Briefcase" size={48} className="text-white transform -rotate-6" />
+              </div>
+            </div>
+            <h2 className="text-5xl font-bold bg-gradient-to-r from-secondary to-primary bg-clip-text text-transparent">Сборки проектов</h2>
           </div>
           <div className="grid md:grid-cols-3 gap-8">
             {projects.map((project) => (
@@ -173,17 +183,25 @@ const Index = () => {
 
       <section id="downloads" className="py-16 bg-muted">
         <div className="container mx-auto px-4">
-          <div className="flex items-center gap-3 mb-8">
-            <Icon name="Download" size={32} className="text-primary" />
-            <h2 className="text-4xl font-bold">Загрузки</h2>
+          <div className="flex items-center gap-4 mb-8">
+            <div className="relative">
+              <div className="absolute inset-0 bg-primary/20 blur-xl rounded-full animate-pulse"></div>
+              <div className="relative bg-gradient-to-br from-primary via-secondary to-primary p-4 rounded-2xl shadow-xl border-4 border-white">
+                <Icon name="Download" size={48} className="text-white" />
+              </div>
+            </div>
+            <h2 className="text-5xl font-bold bg-gradient-to-r from-primary via-secondary to-primary bg-clip-text text-transparent">Загрузки</h2>
           </div>
           <div className="grid md:grid-cols-3 gap-6">
             {downloads.map((file) => (
               <Card key={file.id} className="hover:shadow-lg transition-shadow">
                 <CardContent className="pt-6">
                   <div className="flex items-start gap-4">
-                    <div className="p-3 bg-primary/10 rounded-lg">
-                      <Icon name="FileText" size={24} className="text-primary" />
+                    <div className="relative">
+                      <div className="absolute inset-0 bg-primary/30 blur-md rounded-full"></div>
+                      <div className="relative p-4 bg-gradient-to-br from-primary to-secondary rounded-xl shadow-lg">
+                        <Icon name="FileText" size={32} className="text-white" />
+                      </div>
                     </div>
                     <div className="flex-1">
                       <h3 className="font-semibold mb-1">{file.name}</h3>
@@ -205,9 +223,14 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
             <div className="flex justify-center mb-6">
-              <Icon name="Users" size={48} className="text-secondary" />
+              <div className="relative">
+                <div className="absolute inset-0 bg-gradient-to-r from-primary to-secondary blur-2xl opacity-50 animate-pulse"></div>
+                <div className="relative bg-gradient-to-br from-secondary via-primary to-secondary p-6 rounded-3xl shadow-2xl border-8 border-white transform hover:scale-110 transition-transform">
+                  <Icon name="Users" size={64} className="text-white" />
+                </div>
+              </div>
             </div>
-            <h2 className="text-4xl font-bold mb-6">О студии</h2>
+            <h2 className="text-5xl font-bold mb-6 bg-gradient-to-r from-secondary to-primary bg-clip-text text-transparent">О студии</h2>
             <p className="text-lg text-muted-foreground mb-6">
               Creative Studio — это команда профессионалов, создающая инновационные цифровые решения с 2015 года. 
               Мы специализируемся на разработке веб-приложений, мобильных приложений и комплексных дизайн-систем.
