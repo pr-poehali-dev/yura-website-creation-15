@@ -121,7 +121,7 @@ const Index = () => {
                 <Icon name="Newspaper" size={56} className="text-white drop-shadow-2xl" />
               </div>
             </div>
-            <h2 className="text-5xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">Новости</h2>
+            <h2 className="text-5xl font-bold bg-gradient-to-r from-blue-400 via-blue-300 to-blue-200 bg-clip-text text-transparent">Новости</h2>
           </div>
           <div className="grid md:grid-cols-3 gap-6">
             {news.map((item) => (
@@ -152,7 +152,7 @@ const Index = () => {
                 <Icon name="Briefcase" size={56} className="text-white transform -rotate-12 drop-shadow-2xl" />
               </div>
             </div>
-            <h2 className="text-5xl font-bold bg-gradient-to-r from-secondary to-primary bg-clip-text text-transparent">Сборки проектов</h2>
+            <h2 className="text-5xl font-bold bg-gradient-to-r from-blue-400 via-blue-300 to-blue-200 bg-clip-text text-transparent">Сборки проектов</h2>
           </div>
           <div className="grid md:grid-cols-3 gap-8">
             {projects.map((project) => (
@@ -194,7 +194,7 @@ const Index = () => {
                 <Icon name="Download" size={56} className="text-white drop-shadow-2xl" />
               </div>
             </div>
-            <h2 className="text-5xl font-bold bg-gradient-to-r from-primary via-secondary to-primary bg-clip-text text-transparent">Загрузки</h2>
+            <h2 className="text-5xl font-bold bg-gradient-to-r from-blue-400 via-blue-300 to-blue-200 bg-clip-text text-transparent">Загрузки</h2>
           </div>
           <div className="grid md:grid-cols-3 gap-6">
             {downloads.map((file) => (
@@ -235,7 +235,7 @@ const Index = () => {
                 </div>
               </div>
             </div>
-            <h2 className="text-5xl font-bold mb-6 bg-gradient-to-r from-secondary to-primary bg-clip-text text-transparent">О студии</h2>
+            <h2 className="text-5xl font-bold mb-6 bg-gradient-to-r from-blue-400 via-blue-300 to-blue-200 bg-clip-text text-transparent">О студии</h2>
             <p className="text-lg text-muted-foreground mb-6">
               ON Studio — это команда профессионалов, создающая инновационные цифровые решения с 2015 года. 
               Мы специализируемся на разработке веб-приложений, мобильных приложений и комплексных дизайн-систем.
