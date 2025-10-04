@@ -65,7 +65,7 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-background">
-      <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+      <header className="sticky top-0 z-50 w-full border-b border-blue-700/30 bg-blue-950/40 backdrop-blur-xl">
         <div className="container mx-auto flex h-16 items-center justify-between px-4">
           <h1 className="text-2xl font-bold text-primary">ON Studio</h1>
           <nav className="hidden md:flex gap-6">
@@ -110,7 +110,7 @@ const Index = () => {
         <div className="absolute bottom-20 left-10 w-96 h-96 bg-blue-800/20 rounded-full blur-3xl"></div>
       </section>
 
-      <section id="news" className="py-16 bg-muted">
+      <section id="news" className="py-16">
         <div className="container mx-auto px-4">
           <div className="flex items-center gap-4 mb-8">
             <div className="relative">
@@ -124,7 +124,7 @@ const Index = () => {
           </div>
           <div className="grid md:grid-cols-3 gap-6">
             {news.map((item) => (
-              <Card key={item.id} className="hover:shadow-lg transition-shadow animate-scale-in">
+              <Card key={item.id} className="bg-blue-950/40 backdrop-blur-md border-blue-700/30 hover:bg-blue-900/50 hover:shadow-xl hover:shadow-blue-900/30 transition-all animate-scale-in">
                 <CardHeader>
                   <CardTitle className="text-xl">{item.title}</CardTitle>
                   <CardDescription className="text-sm text-muted-foreground">{item.date}</CardDescription>
@@ -155,7 +155,7 @@ const Index = () => {
           </div>
           <div className="grid md:grid-cols-3 gap-8">
             {projects.map((project) => (
-              <Card key={project.id} className="group overflow-hidden hover:shadow-xl transition-all duration-300 animate-fade-in">
+              <Card key={project.id} className="group overflow-hidden bg-blue-950/40 backdrop-blur-md border-blue-700/30 hover:bg-blue-900/50 hover:shadow-2xl hover:shadow-blue-900/40 transition-all duration-300 animate-fade-in">
                 <div className="relative h-48 overflow-hidden">
                   <img 
                     src={project.image} 
@@ -184,7 +184,7 @@ const Index = () => {
         </div>
       </section>
 
-      <section id="downloads" className="py-16 bg-muted">
+      <section id="downloads" className="py-16">
         <div className="container mx-auto px-4">
           <div className="flex items-center gap-4 mb-8">
             <div className="relative">
@@ -199,7 +199,7 @@ const Index = () => {
           </div>
           <div className="grid md:grid-cols-3 gap-6">
             {downloads.map((file) => (
-              <Card key={file.id} className="hover:shadow-lg transition-shadow">
+              <Card key={file.id} className="bg-blue-950/40 backdrop-blur-md border-blue-700/30 hover:bg-blue-900/50 hover:shadow-xl hover:shadow-blue-900/30 transition-all">
                 <CardContent className="pt-6">
                   <div className="flex items-start gap-4">
                     <div className="relative">
