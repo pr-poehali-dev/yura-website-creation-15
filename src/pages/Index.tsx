@@ -236,8 +236,7 @@ const Index = () => {
             </div>
             <h2 className="text-5xl font-bold mb-6 bg-gradient-to-r from-blue-400 via-blue-300 to-blue-200 bg-clip-text text-transparent">О студии</h2>
             <p className="text-lg text-muted-foreground mb-6">
-              ON Studio — это команда профессионалов, создающая инновационные цифровые решения с 2015 года. 
-              Мы специализируемся на разработке веб-приложений, мобильных приложений и комплексных дизайн-систем.
+              ON Studio - это команда профессионалов, создающие проекты на базе PowerPoint с 2021 года. Они профессионалы в своем деле!
             </p>
             <div className="grid md:grid-cols-3 gap-8 mt-12">
               <div className="text-center">
