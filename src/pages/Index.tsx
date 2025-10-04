@@ -238,18 +238,14 @@ const Index = () => {
             <p className="text-lg text-muted-foreground mb-6">
               ON Studio - это команда профессионалов, создающие проекты на базе PowerPoint с 2021 года. Они профессионалы в своем деле!
             </p>
-            <div className="grid md:grid-cols-3 gap-8 mt-12">
+            <div className="grid md:grid-cols-2 gap-8 mt-12 max-w-2xl mx-auto">
               <div className="text-center">
-                <div className="text-4xl font-bold text-primary mb-2">150+</div>
+                <div className="text-4xl font-bold text-blue-400 mb-2">+5</div>
                 <div className="text-muted-foreground">Проектов</div>
               </div>
               <div className="text-center">
-                <div className="text-4xl font-bold text-secondary mb-2">50+</div>
-                <div className="text-muted-foreground">Клиентов</div>
-              </div>
-              <div className="text-center">
-                <div className="text-4xl font-bold text-primary mb-2">9</div>
-                <div className="text-muted-foreground">Лет опыта</div>
+                <div className="text-4xl font-bold text-blue-400 mb-2">4</div>
+                <div className="text-muted-foreground">Года опыта</div>
               </div>
             </div>
           </div>
