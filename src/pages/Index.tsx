@@ -107,8 +107,7 @@ const Index = () => {
             </div>
           </div>
         </div>
-        <div className="absolute top-20 right-10 w-72 h-72 bg-primary/10 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-20 left-10 w-96 h-96 bg-secondary/10 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-20 left-10 w-96 h-96 bg-blue-800/20 rounded-full blur-3xl"></div>
       </section>
 
       <section id="news" className="py-16 bg-muted">
@@ -132,7 +131,7 @@ const Index = () => {
                 </CardHeader>
                 <CardContent>
                   <p className="text-muted-foreground mb-4">{item.excerpt}</p>
-                  <Button variant="outline" size="sm" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground">
+                  <Button variant="outline" size="sm" className="border-blue-700 bg-gradient-to-r from-blue-900 to-blue-700 text-white hover:from-blue-800 hover:to-blue-600">
                     Читать далее
                   </Button>
                 </CardContent>
@@ -164,7 +163,7 @@ const Index = () => {
                     className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
-                  <span className="absolute top-4 left-4 bg-primary text-primary-foreground px-3 py-1 rounded-full text-sm font-medium">
+                  <span className="absolute top-4 left-4 bg-gradient-to-r from-blue-900 to-blue-700 text-white px-3 py-1 rounded-full text-sm font-medium shadow-lg">
                     {project.category}
                   </span>
                 </div>
@@ -275,7 +274,7 @@ const Index = () => {
             </div>
           </div>
           <div className="text-center mt-6 text-sm opacity-70">
-            © 2024 ON Studio. Все права защищены.
+            © 2025 ON Studio. Все права защищены.
           </div>
         </div>
       </footer>
