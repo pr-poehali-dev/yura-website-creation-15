@@ -95,7 +95,7 @@ const Index = () => {
               Создаем операционные системы на базе PowerPoint
             </h2>
             <p className="text-xl md:text-2xl text-muted-foreground mb-8">
-              Современная студия разработки и дизайна с фокусом на инновации и качество
+              Наши проекты славятся красивым дизайно, красивыми анимациями и крутыми обновлениями
             </p>
             <div className="flex gap-4">
               <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90">
