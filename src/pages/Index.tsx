@@ -67,7 +67,7 @@ const Index = () => {
     <div className="min-h-screen bg-background">
       <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
         <div className="container mx-auto flex h-16 items-center justify-between px-4">
-          <h1 className="text-2xl font-bold text-primary">CREATIVE STUDIO</h1>
+          <h1 className="text-2xl font-bold text-primary">ON Studio</h1>
           <nav className="hidden md:flex gap-6">
             <button onClick={() => scrollToSection('home')} className={`text-sm font-medium transition-colors hover:text-primary ${activeSection === 'home' ? 'text-primary' : 'text-foreground'}`}>
               Главная
@@ -232,7 +232,7 @@ const Index = () => {
             </div>
             <h2 className="text-5xl font-bold mb-6 bg-gradient-to-r from-secondary to-primary bg-clip-text text-transparent">О студии</h2>
             <p className="text-lg text-muted-foreground mb-6">
-              Creative Studio — это команда профессионалов, создающая инновационные цифровые решения с 2015 года. 
+              ON Studio — это команда профессионалов, создающая инновационные цифровые решения с 2015 года. 
               Мы специализируемся на разработке веб-приложений, мобильных приложений и комплексных дизайн-систем.
             </p>
             <div className="grid md:grid-cols-3 gap-8 mt-12">
@@ -256,7 +256,7 @@ const Index = () => {
       <footer className="border-t py-8 bg-foreground text-background">
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <div className="text-2xl font-bold">CREATIVE STUDIO</div>
+            <div className="text-2xl font-bold">ON Studio</div>
             <div className="flex gap-6">
               <a href="#" className="hover:text-primary transition-colors">
                 <Icon name="Mail" size={20} />
@@ -270,7 +270,7 @@ const Index = () => {
             </div>
           </div>
           <div className="text-center mt-6 text-sm opacity-70">
-            © 2024 Creative Studio. Все права защищены.
+            © 2024 ON Studio. Все права защищены.
           </div>
         </div>
       </footer>
