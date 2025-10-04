@@ -115,9 +115,10 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="flex items-center gap-4 mb-8">
             <div className="relative">
-              <div className="absolute inset-0 bg-primary/20 blur-xl rounded-full"></div>
-              <div className="relative bg-gradient-to-br from-primary to-secondary p-4 rounded-2xl shadow-lg">
-                <Icon name="Newspaper" size={48} className="text-white" />
+              <div className="absolute inset-0 bg-gradient-to-r from-orange-500 to-pink-500 blur-2xl rounded-full animate-pulse opacity-60"></div>
+              <div className="absolute inset-0 bg-gradient-to-l from-blue-500 to-purple-500 blur-xl rounded-full animate-pulse opacity-40" style={{animationDelay: '0.5s'}}></div>
+              <div className="relative bg-gradient-to-br from-orange-600 via-pink-600 to-purple-700 p-6 rounded-3xl shadow-2xl border-4 border-white/30 transform hover:scale-110 hover:rotate-3 transition-all duration-300">
+                <Icon name="Newspaper" size={56} className="text-white drop-shadow-2xl" />
               </div>
             </div>
             <h2 className="text-5xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">Новости</h2>
@@ -145,9 +146,10 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="flex items-center gap-4 mb-8">
             <div className="relative">
-              <div className="absolute inset-0 bg-secondary/20 blur-xl rounded-full"></div>
-              <div className="relative bg-gradient-to-br from-secondary to-primary p-4 rounded-2xl shadow-lg transform rotate-6">
-                <Icon name="Briefcase" size={48} className="text-white transform -rotate-6" />
+              <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-cyan-500 blur-2xl rounded-full animate-pulse opacity-60"></div>
+              <div className="absolute inset-0 bg-gradient-to-l from-green-500 to-emerald-500 blur-xl rounded-full animate-pulse opacity-40" style={{animationDelay: '0.3s'}}></div>
+              <div className="relative bg-gradient-to-br from-blue-600 via-cyan-600 to-teal-700 p-6 rounded-3xl shadow-2xl border-4 border-white/30 transform rotate-12 hover:scale-110 hover:rotate-6 transition-all duration-300">
+                <Icon name="Briefcase" size={56} className="text-white transform -rotate-12 drop-shadow-2xl" />
               </div>
             </div>
             <h2 className="text-5xl font-bold bg-gradient-to-r from-secondary to-primary bg-clip-text text-transparent">Сборки проектов</h2>
@@ -185,9 +187,11 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="flex items-center gap-4 mb-8">
             <div className="relative">
-              <div className="absolute inset-0 bg-primary/20 blur-xl rounded-full animate-pulse"></div>
-              <div className="relative bg-gradient-to-br from-primary via-secondary to-primary p-4 rounded-2xl shadow-xl border-4 border-white">
-                <Icon name="Download" size={48} className="text-white" />
+              <div className="absolute inset-0 bg-gradient-to-r from-purple-500 to-pink-500 blur-2xl rounded-full animate-pulse opacity-70"></div>
+              <div className="absolute inset-0 bg-gradient-to-l from-orange-500 to-red-500 blur-xl rounded-full animate-pulse opacity-50" style={{animationDelay: '0.4s'}}></div>
+              <div className="absolute inset-0 bg-gradient-to-t from-yellow-500 to-orange-500 blur-lg rounded-full animate-pulse opacity-30" style={{animationDelay: '0.8s'}}></div>
+              <div className="relative bg-gradient-to-br from-purple-600 via-pink-600 via-orange-600 to-red-700 p-6 rounded-3xl shadow-2xl border-4 border-white/40 transform hover:scale-110 hover:-rotate-3 transition-all duration-300 animate-pulse">
+                <Icon name="Download" size={56} className="text-white drop-shadow-2xl" />
               </div>
             </div>
             <h2 className="text-5xl font-bold bg-gradient-to-r from-primary via-secondary to-primary bg-clip-text text-transparent">Загрузки</h2>
@@ -198,9 +202,9 @@ const Index = () => {
                 <CardContent className="pt-6">
                   <div className="flex items-start gap-4">
                     <div className="relative">
-                      <div className="absolute inset-0 bg-primary/30 blur-md rounded-full"></div>
-                      <div className="relative p-4 bg-gradient-to-br from-primary to-secondary rounded-xl shadow-lg">
-                        <Icon name="FileText" size={32} className="text-white" />
+                      <div className="absolute inset-0 bg-gradient-to-r from-green-500 to-blue-500 blur-lg rounded-full animate-pulse opacity-50"></div>
+                      <div className="relative p-5 bg-gradient-to-br from-green-600 via-teal-600 to-blue-700 rounded-2xl shadow-xl border-2 border-white/30 transform hover:scale-110 hover:rotate-6 transition-all duration-300">
+                        <Icon name="FileText" size={40} className="text-white drop-shadow-lg" />
                       </div>
                     </div>
                     <div className="flex-1">
@@ -224,9 +228,10 @@ const Index = () => {
           <div className="max-w-3xl mx-auto text-center">
             <div className="flex justify-center mb-6">
               <div className="relative">
-                <div className="absolute inset-0 bg-gradient-to-r from-primary to-secondary blur-2xl opacity-50 animate-pulse"></div>
-                <div className="relative bg-gradient-to-br from-secondary via-primary to-secondary p-6 rounded-3xl shadow-2xl border-8 border-white transform hover:scale-110 transition-transform">
-                  <Icon name="Users" size={64} className="text-white" />
+                <div className="absolute inset-0 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 blur-3xl opacity-70 animate-pulse"></div>
+                <div className="absolute inset-0 bg-gradient-to-l from-orange-500 via-red-500 to-yellow-500 blur-2xl opacity-50 animate-pulse" style={{animationDelay: '0.6s'}}></div>
+                <div className="relative bg-gradient-to-br from-blue-600 via-purple-600 via-pink-600 to-orange-700 p-8 rounded-full shadow-2xl border-8 border-white/50 transform hover:scale-125 hover:rotate-12 transition-all duration-500">
+                  <Icon name="Users" size={72} className="text-white drop-shadow-2xl" />
                 </div>
               </div>
             </div>
