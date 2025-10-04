@@ -6,11 +6,11 @@
 
 @layer base {
   :root {
-    --background: 0 0% 97%;
-    --foreground: 0 0% 13%;
+    --background: 220 40% 12%;
+    --foreground: 210 40% 98%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 0 0% 13%;
+    --card: 220 35% 16%;
+    --card-foreground: 210 40% 98%;
 
     --popover: 0 0% 100%;
     --popover-foreground: 0 0% 13%;
@@ -21,8 +21,8 @@
     --secondary: 207 100% 27%;
     --secondary-foreground: 0 0% 100%;
 
-    --muted: 0 0% 97%;
-    --muted-foreground: 0 0% 45%;
+    --muted: 220 35% 18%;
+    --muted-foreground: 215 20% 75%;
 
     --accent: 16 100% 60%;
     --accent-foreground: 0 0% 100%;
@@ -30,7 +30,7 @@
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 0 0% 90%;
+    --border: 220 30% 25%;
     --input: 0 0% 90%;
     --ring: 16 100% 60%;
 
@@ -98,8 +98,17 @@
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply text-foreground;
     font-family: "Inter", sans-serif;
+    background: linear-gradient(
+      135deg,
+      #0a1628 0%,
+      #1a2f4f 25%,
+      #0d1b2a 50%,
+      #1b3a5c 75%,
+      #0f1f38 100%
+    );
+    background-attachment: fixed;
   }
 
   h1,
